@@ -1,0 +1,31 @@
+<form action="." method = "post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    email=<input type="email" name="email"><br>
+    password=<input type="password" name="password"><br>
+    name=<input type="text" name="name"><br>
+
+    dob=<input type="date" name="dob"><br>
+    phno=<input type="number" name="phno"><br>
+    age=<input type="number" name="age"><br>
+
+    Gender=
+    <select name="gender">
+        <option value="M"> male</option>>
+        <option value="F"> female</option>>
+        <option value="o"> others</option>>
+    </select>><br>
+
+
+    designation=
+    <select name="designation">
+        <option value="ceo"> Ceo</option>
+        <option value="cto"> Cto</option>
+        <option value="cfo"> Cfo</option>
+    </select><br>
+
+    image:<input type="file" name="image"><br>
+
+    <button type="submit">register</button>
+
+</form>
